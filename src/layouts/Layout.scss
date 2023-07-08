@@ -1,0 +1,25 @@
+@import "../styles/variables.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  .layout__contents {
+    top: $navbar-height;
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    // margin-left: $sidebar-max-width;
+    // width: calc(100% - $sidebar-max-width);
+    height: calc(100vh - $navbar-height);
+    overflow-y: auto;
+    padding: 20px;
+  }
+  @media screen and (max-width: 720px) {
+    // .layout__contents {
+    //   margin-left: $sidebar-min-width;
+    //   width: calc(100% - $sidebar-min-width);
+    // }
+  }
+}

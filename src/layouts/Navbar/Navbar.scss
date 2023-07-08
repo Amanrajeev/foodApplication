@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+@import "../../styles/colors.scss";
+.navbartop {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: red;
+  height: $navbar-height;
+  border-bottom: 1.5px solid grey;
+  &__contentLeft {
+  }
+  &__contentMiddle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  &__contentRight {
+  }
+}
